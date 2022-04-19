@@ -14,7 +14,7 @@ export class NewsApiService {
     }
 
     getArticlesForSource(sourceId) {
-        return http.get(`top-headlines/sources?sources=${sourceId}&apiKey=${this.apiKey}`);
+        return http.get(`top-headlines?sources=${sourceId}&apiKey=${this.apiKey}`);
     }
 
     getUrlToLogo(source) {
